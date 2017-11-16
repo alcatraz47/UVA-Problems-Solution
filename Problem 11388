@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstdio>
+
+using namespace std;
+
+int main()
+{
+    long long m,n;
+    int test;
+    scanf("%d", &test);
+    while(test--){
+        scanf("%lld %lld", &m,&n);
+        if(n%m==0){
+            printf("%lld %lld\n", m,n);
+        }
+        else{
+            printf("-1\n");
+        }
+    }
+    return 0;
+}
